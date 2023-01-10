@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
     <header>
+        <title>Rock Paper Scissors</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
     </header>
     <body>
-        <h1 class="winner"></h1>
-        <p class="result"></p>
-        <div>
-            <p class="player-score"></p>
-            <p class="computer-score"></p>
+        <h2 style="font-size:60px;margin-bottom: 20px;">Rock Paper Scissors</h2>
+        <h3 style="font-size:36px;margin: auto;" class="winner">Best of five wins</h3>
+        <p class="result"><a style="opacity:0;">.</a></p>
+        <div class="moves-row">
+            <div class="move-and-score">
+                <img class="player-move" src="question-mark.png">
+                <p class="player-score"></p>
+            </div>
+            <div class="move-and-score">
+                <img class="computer-move" src="question-mark.png">
+                <p class="computer-score"></p>
+            </div>
         </div>
-        <button value="Rock">Rock</button>
-        <button value="Paper">Paper</button>
-        <button value="Scissors">Scissors</button>
+        <div>        
+            <button value="Rock">Rock</button>
+            <button value="Paper">Paper</button>
+            <button value="Scissors">Scissors</button>
+        </div>
+
         <script src="rock-paper-scissors.js"></script>
     </body>
 </html>

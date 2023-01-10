@@ -1,0 +1,15 @@
+body    {
+    font-family: "SF Pro Display", sans-serif;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+
+    background-color: #3A3A3C;
+    color: #ffffff;
+}
+
+.moves-row  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

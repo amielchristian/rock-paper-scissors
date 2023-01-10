@@ -38,7 +38,12 @@ function playRound(value)  {
     playerChoice = value;
     computerChoice = getComputerChoice();
 
-    console.log(playerChoice+" vs. "+computerChoice);
+    let playerMove = document.querySelector('.player-move');
+    let computerMove = document.querySelector('.computer-move');
+    playerMove.setAttribute("src",(playerChoice+".png"));
+    playerMove.setAttribute("style","transform:rotate(90deg) scaleX(-1);");
+    computerMove.setAttribute("src",(computerChoice+".png"));
+    computerMove.setAttribute("style","transform:rotate(270deg);");
 
     if (playerChoice === "Rock")    {
         if (computerChoice === "Rock")  {
