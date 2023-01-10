@@ -7,7 +7,6 @@ let playerChoice = "";
 let computerChoice = "";
 let playerScore = 0;
 let computerScore = 0;
-let round = 0;
 
 let winner = document.querySelector('.winner');
 let result = document.querySelector('.result');
@@ -102,17 +101,14 @@ function updateScore()  {
 }
 
 function game() {
-    while (round < 5)   {
+    while (playerScore < 5 && computerScore < 5)   {
         playRound(this.value);
-        round++;
         break;
     }
-    if (round === 5)    {
+    if (playerScore === 5 || computerScore === 5)    {
         if (playerScore > computerScore)
             winner.textContent = "Player wins!";
         if (playerScore < computerScore)
             winner.textContent = "Computer wins!";
-        if (playerScore === computerScore)
-            winner.textContent = "It's a tie!";
     }
 }
